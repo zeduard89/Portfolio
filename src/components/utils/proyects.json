@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "image":"https://files.fm/thumb_show.php?i=5ycksanja",
+      "description": "Plataforma de CrowdFunding. Cuenta con autenticación de terceros, filtrado combinado y ordenamiento, funciones de moderación que permiten el baneo de usuarios y proyectos. Un sistema de envío de correos electrónicos para notificaciones. La carga de imágenes utilizando la tecnología de Azure y como pasarela de pagos 'Mercado Pago'.",
+      "link": "https://crew-xi.vercel.app/",
+      "FrontEnd":"React, React Query, TypeScript, Supabase, tailwing Css y typeScript",
+      "BackEnd":"Node, Express, Azure, Nodemailer y Typesript",
+      "DB":"PostgreSQL y Sequelize",
+      "github1":"https://github.com/zeduard89/backCrew",
+      "github2":"https://github.com/zeduard89/crew",
+      "title":"CrowFunding Crew"
+
+    },
+    {
+      "id": 2,
+      "image": "https://files.fm/thumb_show.php?i=2djbprbmm",
+      "description": "Una aplicación de tarjetas. La app incluye una autenticación simple. Al registrarse, el usuario puede acceder a la plataforma,caso contrario se limita el acceso a la aplicacion. Además, se ha implementado un sistema de búsqueda, filtrado combinado y ordenamiento para facilitar la exploración de las tarjetas.",
+      "link": "https://deploy-henry-dogs.vercel.app/",
+      "FrontEnd":"React, Redux y Css",
+      "BackEnd":"Node y Express",
+      "DB":"PostgreSQL y Sequelize",
+      "github1":"https://github.com/zeduard89/deployHenryDogs",
+      "title":"Henry Dogs Cards"
+    }
+  ]

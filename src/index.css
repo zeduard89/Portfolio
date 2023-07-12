@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+@font-face {
+  font-family: 'google';
+  src: url('./components/utils/font/static/RobotoSlab-SemiBold.ttf') format('truetype');
+}
