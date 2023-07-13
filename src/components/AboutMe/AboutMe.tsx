@@ -3,17 +3,21 @@ import gmail from '../utils/gmail.png'
 import github from '../utils/github.png'
 import instagram from '../utils/instagram.png'
 import imgPerfil from '../utils/foto perfil2chica.jpg'
-
+import TypeWriterEffect from 'react-typewriter-effect';
 
 const AboutMe = () => {
+
+
+
+
   return (
     <div className="h-screen flex flex-col bg-lime-200 ">
       <div className=" h-fit w-fit flex flex-row items-center justify-around px-[5rem] gap-20 mt-[2rem]  bg-lime-200">
         <div>
-          <div className="hidden lg:block rounded-t-[2rem] h-[30rem] w-[23rem] mt-20 overflow-hidden shadow-xl shadow-black/40 ">
+          <div className=" hidden lg:block rounded-t-[2rem] h-[30rem] w-[23rem] mt-20 overflow-hidden shadow-xl shadow-black/40 ">
             <img className="  h-full w-full object-cover  " src={imgPerfil} alt="foto de Perfil" />
           </div>
-          <div className="hidden lg:block bg-black bg-opacity-80 w-[23rem] h-[5.5rem] rounded-b-[2rem]">
+          <div className=" hidden lg:block bg-black bg-opacity-80 w-[23rem] h-[5.5rem] rounded-b-[2rem]">
             <div className=" grid grid-cols-4 w-[22rem] ml-4">
               <a href="https://www.linkedin.com/in/guillermo-paez-9a40b7118/" target="_blank" rel="noopener noreferrer">
                 <img className="h-[4rem] mt-3 ml-1" src={linkedIn} alt="linkedIn" />
@@ -33,10 +37,50 @@ const AboutMe = () => {
         <div>
           <h1 className=" mb-[1rem] text-[3rem] font-bold flex flex-col items-center underline underline-offset-1">Mi camino hasta aquí</h1>
           <div className=" w-fit bg-white opacity-100 p-5 rounded-[1rem] border-8 border-cyan-950">
-            <h1 className="text-[2rem] mb-[1rem]">¿Quién soy?</h1>
-            <p>Soy Guillermo E. Paez, un programador Junior "FullStack" graduado del BootCamp de Henry y estudiante de la carrera de Ingeniería en Sistemas de la Universidad de la Marina Mercante.</p>
-            <h1 className="text-[2rem] my-[1rem]">¿Qué me caracteriza?</h1>
-            <p>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera efectiva. <br /><br /> Nivel de Inglés: B2 Intermedio</p>
+            {/* <h1 className="text-[2rem] mb-[1rem]">¿Quién soy?</h1> */}
+            <h1 className="text-[2rem] mb-[1rem]">
+              
+            <TypeWriterEffect
+              textStyle={{
+                fontFamily: 'google',
+                color: '#3F3D56',
+                fontWeight: 1500,
+                fontSize: '2rem',
+              }}
+              startDelay={10}
+              cursorColor="#3F3D56"
+              hideCursorAfterText={true}
+              multiText={[
+                'Bienvenido a mi Portfolio',
+                'por donde comienzo...',
+                'ya se!!',
+                '¿Quién soy?', 
+              ]}
+              multiTextDelay={1000}
+              typeSpeed={100}
+            />
+            </h1>
+            <p className=''>
+              Soy Guillermo E. Paez, un programador Junior "FullStack" graduado del BootCamp de Henry y estudiante de la carrera de Ingeniería en Sistemas de la Universidad de la Marina Mercante.
+            </p>
+            
+            {/* <h1 className="text-[2rem] my-[1rem]">¿Qué me caracteriza?</h1> */}
+            <h1> 
+            <TypeWriterEffect
+            textStyle={{ 
+              fontFamily: 'google',
+                color: '#3F3D56',
+                fontWeight: 1500,
+                fontSize: '2rem',
+             }}
+            startDelay={17000}
+            cursorColor="black"
+            text="¿Qué me caracteriza?"
+            typeSpeed={100}
+             />
+            </h1>
+            
+            {/* <p>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera efectiva. <br /><br /> Nivel de Inglés: B2 Intermedio</p> */}
           </div>
         </div>
       </div>
