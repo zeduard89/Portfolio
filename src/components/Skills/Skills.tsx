@@ -16,7 +16,7 @@ import scrum from '../utils/scrum.png'
 
 const Skills = () => {
   return (
-    <div className="bg-lime-200 h-screen w-screen flex flex-col items-center mt-[2rem] ">
+    <div className="bg-lime-200 h-full w-screen flex flex-col items-center mt-[2rem] ">
       
       <div className=" h-auto mb-[3rem] flex flex-col items-center">
         <div className="animate-pulse flex space-x-4">
@@ -32,7 +32,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4 w-11/12" >
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-4 w-11/12" >
         <div>
           <h2 className=' bg-green-600 text-[1.5rem] text-center text-white font-bold py-2 w-1/2  rounded-tl-3xl rounded-tr-3xl '>Front-end</h2>
           <div className="bg-white p-4 rounded shadow rounded-tr-3xl rounded-b-3xl grid grid-cols-2">

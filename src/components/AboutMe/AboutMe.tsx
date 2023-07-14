@@ -11,14 +11,14 @@ const AboutMe = () => {
 
 
   return (
-    <div className="h-screen flex flex-col bg-lime-200 ">
-      <div className=" h-fit w-fit flex flex-row items-center justify-around px-[5rem] gap-20 mt-[2rem]  bg-lime-200">
-        <div>
-          <div className=" hidden lg:block rounded-t-[2rem] h-[30rem] w-[23rem] mt-20 overflow-hidden shadow-xl shadow-black/40 ">
+    <div className=" h-full lg:h-screen bg-lime-200 ">
+      <div className="  w-fit grid grid-cols-1 lg:grid-cols-3 gap-5 mx-4 mt-[3rem] ">
+        <div className=' place-self-center '>
+          <div className="  rounded-t-[2rem] h-[30rem] max-w-[25rem] min-w-[20rem] align-middle overflow-hidden shadow-xl shadow-black/40 ">
             <img className="  h-full w-full object-cover  " src={imgPerfil} alt="foto de Perfil" />
           </div>
-          <div className=" hidden lg:block bg-black bg-opacity-80 w-[23rem] h-[5.5rem] rounded-b-[2rem]">
-            <div className=" grid grid-cols-4 w-[22rem] ml-4">
+          <div className=" bg-black bg-opacity-80  h-[5.5rem] max-w-[25rem] min-w-[20rem]  rounded-b-[2rem]">
+            <div className=" grid grid-cols-4  ml-4">
               <a href="https://www.linkedin.com/in/guillermo-paez-9a40b7118/" target="_blank" rel="noopener noreferrer">
                 <img className="h-[4rem] mt-3 ml-1" src={linkedIn} alt="linkedIn" />
               </a>
@@ -34,8 +34,8 @@ const AboutMe = () => {
             </div>
           </div>         
         </div>
-        <div>
-          <h1 className=" mb-[1rem] text-[3rem] font-bold flex flex-col items-center underline underline-offset-1">Mi camino hasta aquí</h1>
+        <div className=" md:col-span-2 mb-1 ">
+          <h1 className=" mb-[1rem] text-[3rem] font-bold flex flex-col items-center text-center underline underline-offset-1">Mi camino hasta aquí</h1>
           <div className=" w-fit bg-white opacity-100 p-5 rounded-[1rem] border-8 border-cyan-950">
             {/* <h1 className="text-[2rem] mb-[1rem]">¿Quién soy?</h1> */}
             <h1 className="text-[2rem] mb-[1rem]">
@@ -80,7 +80,7 @@ const AboutMe = () => {
              />
             </h1>
             
-            {/* <p>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera efectiva. <br /><br /> Nivel de Inglés: B2 Intermedio</p> */}
+            <p>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera efectiva. <br /><br /> Nivel de Inglés: B2 Intermedio</p>
           </div>
         </div>
       </div>
