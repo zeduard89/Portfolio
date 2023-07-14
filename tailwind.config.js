@@ -17,6 +17,7 @@ export default {
       fadeIn:'fadeIn 14.5s',
       fadeIn2:'fadeIn 22s',
       flipImage: 'flipImage 1s ease-in-out',
+      ping2: 'ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite'
 
 
       },
@@ -131,6 +132,12 @@ export default {
           },
           '100%': {
             transform: 'scaleX(1)'
+          }
+        },
+        ping2:{
+          '75% ,100%': {
+            transform: 'scale(2)',
+            opacity: '0%'
           }
         }
         
