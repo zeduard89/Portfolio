@@ -34,3 +34,8 @@ p {
   font-family: 'google';
   src: url('./components/utils/font/static/RobotoSlab-SemiBold.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'anton';
+  src: url('./components/utils/font/Anton-Regular.ttf') format('truetype');
+}
