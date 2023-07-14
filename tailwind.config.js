@@ -12,7 +12,8 @@ export default {
       bounce2: 'bounce2 5.4s infinite',
       bounce: 'bounce 1.8s infinite',
       slideDown: 'slideDown 2s',
-      fadeIn:'fadeIn 20s'
+      fadeIn:'fadeIn 14.5s',
+      fadeIn2:'fadeIn 22s'
 
       },
       keyframes: {
@@ -64,6 +65,20 @@ export default {
           '0%':{
             opacity:'0%'
           },
+          '90%':{
+            opacity:'0%'
+          },
+          '100%':{
+            opacity: '100%'
+          }
+        },
+        fadeIn2:{
+          '0%':{
+            opacity:'0%'
+          },
+          '90%':{
+            opacity:'0%'
+          },
           '100%':{
             opacity: '100%'
           }
@@ -71,6 +86,9 @@ export default {
         
       },
     },
+    boxShadow:{
+      neon:"0 0 10px theme('colors.green.200'),0 0 40px theme('colors.green.700')"
+    }
   },
   variants: {
     extend: {

@@ -12,8 +12,8 @@ const AboutMe = () => {
 
   return (
     <div className=" h-full lg:h-screen bg-lime-200 ">
-      <div className="  w-fit grid grid-cols-1 lg:grid-cols-3 gap-5 mx-4 mt-[3rem] ">
-        <div className=' place-self-center '>
+      <div className="   w-fit grid grid-cols-1 lg:grid-cols-3 gap-5 mx-4 mt-[5rem] ">
+        <div className='  place-self-center '>
           <div className="  rounded-t-[2rem] h-[30rem] max-w-[25rem] min-w-[20rem] align-middle overflow-hidden shadow-xl shadow-black/40 ">
             <img className="  h-full w-full object-cover  " src={imgPerfil} alt="foto de Perfil" />
           </div>
@@ -35,52 +35,49 @@ const AboutMe = () => {
           </div>         
         </div>
         <div className=" md:col-span-2 mb-1 ">
-          <h1 className=" mb-[1rem] text-[3rem] font-bold flex flex-col items-center text-center underline underline-offset-1">Mi camino hasta aquí</h1>
+          <h1 className="   mb-[1rem] text-[3rem] font-bold flex flex-col items-center text-center underline underline-offset-1">Mi camino hasta aquí</h1>
           <div className=" w-fit bg-white opacity-100 p-5 rounded-[1rem] border-8 border-cyan-950">
-            {/* <h1 className="text-[2rem] mb-[1rem]">¿Quién soy?</h1> */}
-            <h1 className="text-[2rem] mb-[1rem]">
+            <h1 className="text-[2rem] mb-[1rem] h-10">
+              <TypeWriterEffect
+                textStyle={{
+                  fontFamily: 'google',
+                  color: '#3F3D56',
+                  fontWeight: 1500,
+                  fontSize: '2rem',
+                }}
+                startDelay={10}
+                cursorColor="#3F3D56"
+                hideCursorAfterText={true}
+                multiText={[
+                  'Bienvenido a mi Portfolio, por donde comienzo...',
+                  'ya se!!',
+                  '¿Quién soy?', 
+                ]}
+                multiTextDelay={1000}
+                typeSpeed={100}
+              />
               
-            <TypeWriterEffect
-              textStyle={{
-                fontFamily: 'google',
-                color: '#3F3D56',
-                fontWeight: 1500,
-                fontSize: '2rem',
-              }}
-              startDelay={10}
-              cursorColor="#3F3D56"
-              hideCursorAfterText={true}
-              multiText={[
-                'Bienvenido a mi Portfolio',
-                'por donde comienzo...',
-                'ya se!!',
-                '¿Quién soy?', 
-              ]}
-              multiTextDelay={1000}
-              typeSpeed={100}
-            />
             </h1>
-            <p className=''>
+            <p className='animate-fadeIn '>
               Soy Guillermo E. Paez, un programador Junior "FullStack" graduado del BootCamp de Henry y estudiante de la carrera de Ingeniería en Sistemas de la Universidad de la Marina Mercante.
             </p>
             
-            {/* <h1 className="text-[2rem] my-[1rem]">¿Qué me caracteriza?</h1> */}
-            <h1> 
-            <TypeWriterEffect
-            textStyle={{ 
-              fontFamily: 'google',
-                color: '#3F3D56',
-                fontWeight: 1500,
-                fontSize: '2rem',
-             }}
-            startDelay={17000}
-            cursorColor="black"
-            text="¿Qué me caracteriza?"
-            typeSpeed={100}
-             />
+            <h1 className="text-[2rem] mb-[1rem] h-10">
+              <TypeWriterEffect
+              textStyle={{ 
+                fontFamily: 'google',
+                  color: '#3F3D56',
+                  fontWeight: 1500,
+                  fontSize: '2rem',
+              }}
+              startDelay={15500}
+              cursorColor="black"
+              text="¿Qué me caracteriza?"
+              typeSpeed={100}
+              />
             </h1>
             
-            <p>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera efectiva. <br /><br /> Nivel de Inglés: B2 Intermedio</p>
+            <p className='animate-fadeIn2'>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera efectiva. <br /><br /> Nivel de Inglés: B2 Intermedio</p>
           </div>
         </div>
       </div>
