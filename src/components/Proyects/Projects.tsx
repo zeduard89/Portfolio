@@ -15,7 +15,7 @@ const Projects = () => {
 
   return (
     <div className="bg-lime-200 h-screen  ">
-      <div className="bg-lime-200  mx-auto mx-1 py-3">
+      <div className="bg-lime-200  sm:mx-auto mx-1 py-3">
         <h1 className="text-5xl font-bold mb-[3rem] mt-[2rem] ml-10 flex justify-center hover:animate-vibrate underline underline-offset-1">Mis Proyectos</h1>
         <div className=" bg-lime-200 grid gap-5 sm:grid-cols-1 lg:grid-cols-2">
           {projects.map((project: IProject)=> (
