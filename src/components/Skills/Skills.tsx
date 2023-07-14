@@ -34,8 +34,8 @@ const Skills = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3  gap-4 w-11/12" >
         <div>
-          <h2 className=' bg-green-600 text-[1.5rem] text-center text-white font-bold py-2 w-1/2  rounded-tl-3xl rounded-tr-3xl '>Front-end</h2>
-          <div className="bg-white p-4 rounded shadow rounded-tr-3xl rounded-b-3xl grid grid-cols-2">
+          <h2 className=' bg-green-600 text-[1.5rem] text-center text-white font-bold py-2 w-2/3  rounded-tl-3xl rounded-tr-3xl '>Front-end</h2>
+          <div className="bg-white pt-4 rounded shadow rounded-tr-3xl rounded-b-3xl grid grid-cols-2">
             <ul className="mt-2 ml-5">
               <img className="h-[5rem] w-[5rem]" src={html} alt="html" />
               <img className="h-[5rem] w-[5rem]" src={css} alt="css" />
@@ -44,18 +44,18 @@ const Skills = () => {
               <img className="h-[5rem] w-[5rem]" src={redux} alt="redux" />
             </ul>
             <ul className="text-[1.5rem]">
-              <li className="mt-[2.5rem]">HTML</li>
-              <li className="mt-[3rem]">CSS</li>
-              <li className="mt-[4rem]">JavaScript</li>
-              <li className="mt-[4rem]">React</li>
-              <li className="mt-[3rem]">Redux</li>
+              <li className="animate-slideLeft mt-[2.5rem]">HTML</li>
+              <li className="animate-slideLeft mt-[3rem]">CSS</li>
+              <li className="animate-slideLeft mt-[4rem] text-[1.4rem]">JavaScript</li>
+              <li className="animate-slideLeft mt-[4rem]">React</li>
+              <li className="animate-slideLeft mt-[3rem]">Redux</li>
             </ul>
           </div>
         </div>
 
         <div>
-          <h2 className='btnNav bg-green-600 text-[1.5rem] text-center text-white font-bold py-2 w-1/2  rounded-tl-3xl rounded-tr-3xl '>Back-end</h2>
-          <div className="bg-white p-4 rounded shadow rounded-tr-3xl rounded-b-3xl grid grid-cols-2">
+          <h2 className='btnNav bg-green-600 text-[1.5rem] text-center text-white font-bold py-2 w-2/3  rounded-tl-3xl rounded-tr-3xl '>Back-end</h2>
+          <div className="bg-white pt-4 rounded shadow rounded-tr-3xl rounded-b-3xl grid grid-cols-2">
             <ul className="mt-2 ml-5 text-[3rem]">
               <img className="h-[5rem] w-[5rem]" src={node} alt="node" />
               <img className="h-[5rem] w-[5rem]" src={express} alt="express" />
@@ -64,20 +64,20 @@ const Skills = () => {
               <img className="h-[5rem] w-[5rem]" src={azure} alt="azure" />
               <img className="h-[5rem] w-[5rem]" src={postman} alt="postman" />
             </ul>
-            <ul className="text-[1.5rem]">
-              <li className="mt-[2rem]">Node.js</li>
-              <li className="mt-[4rem]">Express</li>
-              <li className="mt-[3rem]">PostgresSQL</li>
-              <li className="mt-[4rem]">Sequelize</li>
-              <li className="mt-[4rem]">Azure</li>
-              <li className="mt-[4rem]">Postman</li>
+            <ul className="text-[1.5rem] text-justify">
+              <li className="animate-slideLeft mt-[2rem]">Node.js</li>
+              <li className="animate-slideLeft mt-[4rem]">Express</li>
+              <li className="animate-slideLeft mt-[3rem]">Postgre SQL</li>
+              <li className="animate-slideLeft mt-[2rem] lg:mt-[3.5rem]">Sequelize</li>
+              <li className="animate-slideLeft mt-[4rem]">Azure</li>
+              <li className="animate-slideLeft mt-[4rem]">Postman</li>
             </ul>
           </div>
         </div>
 
         <div>
-          <h2 className='btnNav bg-green-600 text-[1.5rem] text-center  text-white font-bold py-2 w-1/2  rounded-tl-3xl rounded-tr-3xl '>Other</h2>
-          <div className="bg-white p-4 rounded shadow rounded-tr-3xl rounded-b-3xl  grid grid-cols-2">
+          <h2 className='btnNav bg-green-600 text-[1.5rem] text-center  text-white font-bold py-2 w-2/3  rounded-tl-3xl rounded-tr-3xl '>Other</h2>
+          <div className="bg-white pt-4 rounded shadow rounded-tr-3xl rounded-b-3xl  grid grid-cols-2">
             <ul className="mt-2 ml-3 text-[3rem]">
               <img className="h-[5rem] w-[5rem]" src={git} alt="css" />
               <img className="h-[5rem] w-[5rem]" src={github} alt="html" />
@@ -85,10 +85,10 @@ const Skills = () => {
               <img className="h-[5rem] w-[5rem]" src={scrum} alt="react" />
             </ul>
             <ul className="text-[1.5rem]">
-              <li className="mt-[2rem]">Git</li>
-              <li className="mt-[3.5rem]">GitHub</li>
-              <li className="mt-[4rem]">Problem Solving</li>
-              <li className="mt-[3rem]">Agile Methodologies</li>
+              <li className="animate-slideLeft mt-[2rem]">Git</li>
+              <li className="animate-slideLeft mt-[4rem]">GitHub</li>
+              <li className="animate-slideLeft mt-[2rem] xl:mt-[3.5rem]">Problem Solving</li>
+              <li className="animate-slideLeft mt-[2rem] md:mt-[3rem] xl:mt-[3.5rem] text-[1.2rem]">Scrum</li>
             </ul>
           </div>
         </div>

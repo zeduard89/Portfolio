@@ -80,7 +80,7 @@ const AboutMe = () => {
             </h1>
             
             <p className='pb-10 animate-fadeIn2'>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera. </p>
-            <img className="animate-bounceMen w-10 absolute bottom-[-16px] left-2" src={giftMen} alt="menWalking" />
+            <img className="animate-bounceMen w-10 absolute bottom-[-16px] left-2" src={giftMen} alt="menWalking" draggable='false'/>
           </div>
         </div>
       </div>

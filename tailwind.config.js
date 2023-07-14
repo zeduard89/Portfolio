@@ -13,9 +13,11 @@ export default {
       bounce: 'bounce 1.8s infinite',
       bounceMen: 'bounceMen 20s infinite',
       slideDown: 'slideDown 2s',
+      slideLeft: 'slideLeft 1s',
       fadeIn:'fadeIn 14.5s',
       fadeIn2:'fadeIn 22s',
       flipImage: 'flipImage 1s ease-in-out',
+
 
       },
       keyframes: {
@@ -80,6 +82,22 @@ export default {
           },
           '100%':{
             transform: 'translateY(0rem)'
+          }
+        },
+        slideLeft:{
+          '0%':{
+            transform: 'translatex(-7rem)',
+            opacity:'0%'
+          },
+          '25%':{
+            opacity:'0%'
+          },
+          '55%':{
+            opacity:'50%'
+          },
+          '100%':{
+            transform: 'translatex(0rem)',
+            opacity:'100%'
           }
         },
         fadeIn:{
