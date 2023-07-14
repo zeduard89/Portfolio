@@ -11,9 +11,11 @@ export default {
       vibrate: 'vibrate 5.8s infinite',
       bounce2: 'bounce2 5.4s infinite',
       bounce: 'bounce 1.8s infinite',
+      bounceMen: 'bounceMen 20s infinite',
       slideDown: 'slideDown 2s',
       fadeIn:'fadeIn 14.5s',
-      fadeIn2:'fadeIn 22s'
+      fadeIn2:'fadeIn 22s',
+      flipImage: 'flipImage 1s ease-in-out',
 
       },
       keyframes: {
@@ -53,6 +55,25 @@ export default {
             'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)',
           },
         },
+        bounceMen: {
+          '0%': {
+            transform: 'translatex(0%)',
+            'animation-timing-function': 'cubic-bezier(0, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translatex(900%)',
+            'animation-timing-function': 'cubic-bezier(0, 0, 1, 1)',
+          },
+          '51%':{
+            transform: ' translatex(900%) scaleX(-1)',
+            'animation-timing-function': 'cubic-bezier(0, 0, 1, 1)',
+          },
+          '100%': {
+            transform: 'translatex(0%) scaleX(-1)',
+            'animation-timing-function': 'cubic-bezier(0, 0, 1, 1)',
+          },
+            
+        },
         slideDown:{
           '0%':{
             transform: 'translateY(-25rem)',
@@ -81,6 +102,17 @@ export default {
           },
           '100%':{
             opacity: '100%'
+          }
+        },
+        flipImage: {
+          '0%': {
+            transform: 'scaleX(1)'
+          },
+         '50%': {
+            transform: 'scaleX(-1)'
+          },
+          '100%': {
+            transform: 'scaleX(1)'
           }
         }
         
