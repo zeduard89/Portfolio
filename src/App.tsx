@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="bg-lime-200">
-     <NavBar />1
+     <NavBar />
       <Routes>
         <Route path='/' element={<AboutMe/>}/>
         <Route path='/Projects' element={<Projects/>}/>
