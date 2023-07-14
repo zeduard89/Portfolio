@@ -32,7 +32,7 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-4 w-11/12" >
+      <div className="grid grid-cols-1 mb-2 md:grid-cols-3  gap-4 w-11/12" >
         <div>
           <h2 className=' bg-green-600 text-[1.5rem] text-center text-white font-bold py-2 w-2/3  rounded-tl-3xl rounded-tr-3xl '>Front-end</h2>
           <div className="bg-white pt-4 rounded shadow rounded-tr-3xl rounded-b-3xl grid grid-cols-2">

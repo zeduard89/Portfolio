@@ -23,7 +23,7 @@ const Projects = () => {
               <div className="  group cursor-pointer w-full">
                 <div className="relative transform transition ease-in-out  [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] duration-1000 " >
                   {loading && (
-                    <div className="w-[30rem] h-[450px]  flex justify-center pt-[8rem] bg-white rounded-t-[2rem] ">
+                    <div className="w-[23rem] sm:w-[30rem] h-[450px]  flex justify-center pt-[8rem] bg-white rounded-t-[2rem] ">
                       <img className="h-[150px]" src={spinner} alt="Loading" />
                     </div>
                   )}

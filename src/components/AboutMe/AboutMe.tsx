@@ -39,7 +39,7 @@ const AboutMe = () => {
         <div className=" md:col-span-2 mb-1 ">
           <h1 className="   mb-[1rem] text-[3rem] font-bold flex flex-col items-center text-center underline underline-offset-1">Mi camino hasta aquí</h1>
           <div className="relative w-fit bg-white opacity-100 p-5 rounded-[1rem] border-8 border-cyan-950">
-            <h1 className="text-[2rem] mb-[1rem] h-10">
+            <h1 className="text-[2rem] mb-[2rem] h-10">
               <TypeWriterEffect
                 textStyle={{
                   fontFamily: 'google',
@@ -64,7 +64,7 @@ const AboutMe = () => {
               Soy Guillermo E. Paez, un programador Junior "FullStack" graduado del BootCamp de Henry y estudiante de la carrera de Ingeniería en Sistemas de la Universidad de la Marina Mercante.
             </p>
             
-            <h1 className="text-[2rem] mb-[1rem] h-10">
+            <h1 className="text-[2rem] mb-[2rem] mt-3 sm:mt-3 h-10">
               <TypeWriterEffect
               textStyle={{ 
                 fontFamily: 'google',
@@ -79,7 +79,7 @@ const AboutMe = () => {
               />
             </h1>
             
-            <p className='pb-10 animate-fadeIn2'>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera. </p>
+            <p className='mt-14 sm:mt-0 pb-10 animate-fadeIn2'>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera. </p>
             <img className="animate-bounceMen w-10 absolute bottom-[-16px] left-2" src={giftMen} alt="menWalking" draggable='false'/>
           </div>
         </div>
