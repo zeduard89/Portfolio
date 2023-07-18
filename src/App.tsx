@@ -2,6 +2,7 @@ import {Route , Routes} from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import 'tailwindcss/tailwind.css';
 import Error from './components/Error/Error';
+import Picture from './components/AboutMe/Picture'
 import AboutMe from './components/AboutMe/AboutMe';
 // import Projects from './components/Proyects/Projects';
 // import Skills from './components/Skills/Skills';
@@ -18,6 +19,7 @@ function App() {
           <Header/>
         </div>
         <div className="relative z-[-10]">
+          <Picture/>
           <AboutMe/>
           {/* <Projects/>
           <Skills/>  */}

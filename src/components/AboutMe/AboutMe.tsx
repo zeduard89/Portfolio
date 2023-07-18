@@ -1,8 +1,3 @@
-import linkedIn from '../utils/AboutMe/linkedIn.png'
-import gmail from '../utils/AboutMe/gmail.png'
-import github from '../utils/AboutMe/github.png'
-import instagram from '../utils/AboutMe/instagram.png'
-import imgPerfil from '../utils/AboutMe/foto perfil2chica.jpg'
 import giftMen from '../utils/gift/Walk.gif'
 import TypeWriterEffect from 'react-typewriter-effect';
 import {useState} from 'react'
@@ -14,7 +9,11 @@ const AboutMe = () => {
   const [useToogle, setToogle] = useState (true)
 
   return (
-    <div className=" h-full lg:h-screen pt-[13rem] w-full">
+    <div className=" h-full lg:h-screen  w-full">
+
+    
+        
+
       <div className="   w-fit grid grid-cols-1 mx-10 md:mx-20 ">
         {useToogle?
         <div className=" md:col-span-3 mb-1 ">
@@ -84,33 +83,6 @@ const AboutMe = () => {
         }  
       </div>
       
-        <div className=' flex flex-wrap justify-center mt-5'>
-          <div className=' drop-shadow-xl place-self-center m-5 '>
-            <div className="  rounded-t-[2rem] h-[16rem] w-[14rem]  overflow-hidden ">
-              <img className="  h-full w-full object-cover  " src={imgPerfil} alt="foto de Perfil" />
-            </div>
-            <div className=" bg-white bg-opacity-80  h-[3.5rem] w-[14rem]  rounded-b-[2rem]">
-              <div className=" grid grid-cols-4  ml-.5">
-                <a href="https://www.linkedin.com/in/guillermo-paez-9a40b7118/" target="_blank" rel="noopener noreferrer">
-                  <img className="h-[2.5rem] mt-2 ml-3" src={linkedIn} alt="linkedIn" />
-                </a>
-                <a href="mailto:zeduard89@gmail.com?subject=Te%20Contacto%20Por%20Medio%20de%20tu%20Porfolio&body=Hola%20Guillermo,%0D%0A%0D%0AEspero%20que%20te%20encuentres%20bien.%20Quisiera%20ponerme%20en%20contacto%20contigo%20para%20discutir%20oportunidades%20de%20colaboración.%0D%0A%0D%0A¡Saludos%20cordiales!">
-                  <img className="h-[2.2rem] mt-3 ml-1" src={gmail} alt="linkedIn" />
-                </a>
-                <a href="https://instagram.com/zeduard89?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer">
-                  <img className="h-[3rem] ml-1 mt-2" src={instagram} alt="linkedIn" />
-                </a>
-                <a href="https://github.com/zeduard89" target="_blank" rel="noopener noreferrer">
-                  <img className="h-[3.5rem] mt-1 pr-[.5rem] " src={github} alt="linkedIn" />
-                </a>
-              </div>
-
-            </div>         
-          </div>
-          <div>
-            <h2>hola</h2>
-          </div>
-        </div>
     </div>
     
 

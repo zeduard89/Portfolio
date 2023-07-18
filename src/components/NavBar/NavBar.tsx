@@ -1,5 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import linkedIn from '../utils/AboutMe/linkedIn.png'
+import gmail from '../utils/AboutMe/gmail.png'
+import github from '../utils/AboutMe/github2.png'
+import instagram from '../utils/AboutMe/instagram.png'
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -72,6 +76,22 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
+      <div className="hidden md:block h-[3.5rem] w-[14rem]  rounded-b-[2rem]">
+                <div className=" grid grid-cols-4  ml-.5">
+                    <a href="https://www.linkedin.com/in/guillermo-paez-9a40b7118/" target="_blank" rel="noopener noreferrer">
+                    <img className="h-[2.2rem] mt-2 ml-3 bg-white rounded-lg" src={linkedIn} alt="linkedIn" />
+                    </a>
+                    <a href="mailto:zeduard89@gmail.com?subject=Te%20Contacto%20Por%20Medio%20de%20tu%20Porfolio&body=Hola%20Guillermo,%0D%0A%0D%0AEspero%20que%20te%20encuentres%20bien.%20Quisiera%20ponerme%20en%20contacto%20contigo%20para%20discutir%20oportunidades%20de%20colaboración.%0D%0A%0D%0A¡Saludos%20cordiales!">
+                    <img className="h-[2.2rem] mt-[9px] ml-[5px] bg-white rounded-lg" src={gmail} alt="linkedIn" />
+                    </a>
+                    <a href="https://instagram.com/zeduard89?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer">
+                    <img className="h-[2.3rem] mt-2 bg-white rounded-lg" src={instagram} alt="linkedIn" />
+                    </a>
+                    <a href="https://github.com/zeduard89" target="_blank" rel="noopener noreferrer">
+                    <img className="h-[2.2rem]  mt-[10px]  bg-white rounded-lg" src={github} alt="linkedIn" />
+                    </a>
+                </div>
+            </div>  
     </nav>
   );
 };
