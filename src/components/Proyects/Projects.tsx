@@ -1,7 +1,7 @@
-import projects from '../utils/proyects.json';
+import projects from '../utils/projects/proyects.json';
 import { IProject } from '../interfaces';
 import { useState } from 'react';
-import spinner from '../utils/Spinner-3.gif'
+import spinner from '../utils/projects/Spinner-3.gif'
 import styles from './Projects.module.css'
 
 
@@ -14,10 +14,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="bg-lime-200 h-screen  ">
-      <div className="bg-lime-200  sm:mx-auto mx-1 py-5">
+    <div className="bg-transparent ">
+      <div className="  sm:mx-auto mx-1 py-5">
         <h1 className={styles.titulo}>Mis Proyectos</h1>
-        <div className=" bg-lime-200 grid gap-5 sm:grid-cols-1 lg:grid-cols-2">
+        <div className=" grid gap-5 sm:grid-cols-1 lg:grid-cols-2">
           {projects.map((project: IProject)=> (
             <div key={project.id} className=" rounded-lg   mx-auto ">
               <div className="  group cursor-pointer w-full">

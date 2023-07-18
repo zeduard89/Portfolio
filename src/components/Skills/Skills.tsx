@@ -1,22 +1,22 @@
-import html from '../utils/html.png'
-import css from '../utils/css.png'
-import javaScript from '../utils/javaScript.png'
-import react from '../utils/react.png'
-import redux from '../utils/redux.png'
-import node from '../utils/nodeJs.png'
-import express from '../utils/express.png'
-import postgres from '../utils/postgres.png'
-import sequelize from '../utils/sequelize.png'
-import postman from '../utils/postman.png'
-import azure from '../utils/azure.png'
-import github from '../utils/github.png'
-import git from '../utils/git.png'
-import solvingProblem from '../utils/solvingProblem.png'
-import scrum from '../utils/scrum.png'
+import html from '../utils/Skils/html.png'
+import css from '../utils/Skils/css.png'
+import javaScript from '../utils/Skils/javaScript.png'
+import react from '../utils/Skils/react.png'
+import redux from '../utils/Skils/redux.png'
+import node from '../utils/Skils/nodeJs.png'
+import express from '../utils/Skils/express.png'
+import postgres from '../utils/Skils/postgres.png'
+import sequelize from '../utils/Skils/sequelize.png'
+import postman from '../utils/Skils/postman.png'
+import azure from '../utils/Skils/azure.png'
+import github from '../utils/AboutMe/github.png'
+import git from '../utils/Skils/git.png'
+import solvingProblem from '../utils/Skils/solvingProblem.png'
+import scrum from '../utils/Skils/scrum.png'
 
 const Skills = () => {
   return (
-    <div className="bg-lime-200 h-full w-screen flex flex-col items-center mt-[2rem] ">
+    <div className="h-full w-screen flex flex-col items-center mt-[2rem] ">
       
       <div className=" h-auto mb-[3rem] flex flex-col items-center">
         <div className="animate-pulse flex space-x-4">

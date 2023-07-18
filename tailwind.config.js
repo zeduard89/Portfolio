@@ -7,17 +7,21 @@ export default {
   darkMode: true, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily:{
+        'headerFont':['headerFont']
+      },
       animation: {
       vibrate: 'vibrate 5.8s infinite',
       bounce2: 'bounce2 5.4s infinite',
       bounce: 'bounce 1.8s infinite',
       bounceMen: 'bounceMen 20s infinite',
-      slideDown: 'slideDown 2s',
+      slideDown: 'slideDown 3s',
       slideLeft: 'slideLeft 1s',
       fadeIn:'fadeIn 14.5s',
       fadeIn2:'fadeIn 22s',
       flipImage: 'flipImage 1s ease-in-out',
-      ping2: 'ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite'
+      ping2: 'ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite',
+      
 
 
       },
