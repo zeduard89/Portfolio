@@ -16,7 +16,7 @@ import scrum from '../utils/Skils/scrum.png'
 
 const Skills = () => {
   return (
-    <div className="h-full w-screen flex flex-col items-center mt-[2rem] ">
+    <div className="h-fit w-screen flex flex-col items-center mt-[2rem] ">
       
       <div className=" h-auto mb-[3rem] flex flex-col items-center">
         <div className="animate-pulse flex space-x-4">

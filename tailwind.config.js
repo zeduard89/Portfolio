@@ -19,6 +19,8 @@ export default {
       slideLeft: 'slideLeft 1s',
       fadeIn:'fadeIn 14.5s',
       fadeIn2:'fadeIn 22s',
+      fadeInHeader:'fadeIn 3s',
+      fadeOut:'fadeOut 6s',
       flipImage: 'flipImage 1s ease-in-out',
       ping2: 'ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite',
       
@@ -125,6 +127,34 @@ export default {
           },
           '100%':{
             opacity: '100%'
+          }
+        },
+        fadeInHeader:{
+          '0%':{
+            opacity:'10%'
+          },
+          '30%':{
+            opacity:'60%'
+          },
+          '70%':{
+            opacity:'70%'
+          },
+          '100%':{
+            opacity: '100%'
+          }
+        },
+        fadeOut:{
+          '0%':{
+            opacity:'100%'
+          },
+          '70%':{
+            opacity:'50%'
+          },
+          '90%':{
+            opacity:'10%'
+          },
+          '100%':{
+            opacity: '3%'
           }
         },
         flipImage: {

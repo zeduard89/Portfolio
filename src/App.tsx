@@ -4,8 +4,8 @@ import 'tailwindcss/tailwind.css';
 import Error from './components/Error/Error';
 import Picture from './components/AboutMe/Picture'
 import AboutMe from './components/AboutMe/AboutMe';
-// import Projects from './components/Proyects/Projects';
-// import Skills from './components/Skills/Skills';
+import Projects2 from './components/Proyects/Projects2';
+import Skills from './components/Skills/Skills';
 import Header from './components/Header/Header';
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
         <div className="relative z-[-10]">
           <Picture/>
           <AboutMe/>
-          {/* <Projects/>
-          <Skills/>  */}
+          <Projects2/>
+          <Skills/>
           <Routes>
             <Route path=':error' element={<Error/>}/>
           </Routes>

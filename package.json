@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@types/redux": "^3.6.0",
+    "chart.js": "^4.3.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-standard-with-typescript": "^36.0.0",
     "eslint-plugin-import": "^2.27.5",
@@ -19,15 +20,20 @@
     "eslint-plugin-react": "^7.32.2",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.1",
+    "react-slick": "^0.29.0",
     "react-typewriter-effect": "^1.1.0",
-    "redux": "^4.2.1"
+    "redux": "^4.2.1",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@types/react-slick": "^0.23.10",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "@vitejs/plugin-react-swc": "^3.3.2",

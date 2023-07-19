@@ -1,6 +1,6 @@
 .titulo {
-    font-family: anton;
-    font-size: 4rem;
+    font-family: headerFont;
+    font-size: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -9,14 +9,11 @@ const AboutMe = () => {
   const [useToogle, setToogle] = useState (true)
 
   return (
-    <div className=" h-full lg:h-screen  w-full">
-
-    
-        
-
+    <div className=" h-fit lg:h-screen  w-full">
       <div className="   w-fit grid grid-cols-1 mx-10 md:mx-20 ">
         {useToogle?
         <div className=" md:col-span-3 mb-1 ">
+          <h1 className={styles.titulo}>Mi camino hasta aquí</h1>
           <div className="relative w-fit bg-white opacity-100 p-5 rounded-[1rem] border-2 border-green-500">
           <button className="absolute top-3 right-3 inline-block rounded-[99rem] border-2 border-green-500 px-3 pb-[6px] pt-2 text-xs  hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600" onClick={()=>{setToogle(!useToogle)}}>X</button>
             <h1 className="text-[2rem] mb-[2rem] h-10">

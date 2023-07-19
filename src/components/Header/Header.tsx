@@ -10,7 +10,7 @@ const Header = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
           setIsActive(false);
-        }, 2900);
+        }, 3000);
     
         return () => {
           clearTimeout(timer);
@@ -27,13 +27,13 @@ const Header = () => {
 
 
         {isActive && (
-        <div className='relative top-[-20rem] md:top-[-22rem]'>
+        <div className='animate-fadeOut relative top-[-20rem] md:top-[-22rem]'>
           <TextEffect1 />
         </div>
         )}
 
         {isActive || (    
-        <div className=" ml-5 pt-3 pl-5 w-[22rem] lg:w-[28rem] h-[16rem] lg:h-[13rem] relative z-[-5] top-[-23rem]  hidden md:block bg-slate-300 bg-opacity-60
+        <div className="animate-fadeInHeader ml-5 pt-3 pl-5 w-[22rem] lg:w-[28rem] h-[16rem] lg:h-[13rem] relative z-[-5] top-[-23rem]  hidden md:block bg-slate-300 bg-opacity-60
         rounded-lg border-white border-[.2rem]">
             
             <TypeWriterEffect
@@ -87,7 +87,7 @@ const Header = () => {
         </div>
         )}
         {isActive || (
-        <div className="ml-5 p-5 w-[14rem] relative z-[-5] top-[-20rem] visible sm:invisible bg-slate-300 bg-opacity-60
+        <div className="ml-5 p-5 w-[14rem] relative z-[-5] top-[-20rem] visible md:invisible bg-slate-300 bg-opacity-60
         rounded-lg border-white border-[.2rem]">
             <TypeWriterEffect
                             textStyle={{
