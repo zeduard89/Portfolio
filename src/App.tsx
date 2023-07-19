@@ -5,7 +5,7 @@ import Error from './components/Error/Error';
 import Picture from './components/AboutMe/Picture'
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects2 from './components/Proyects/Projects2';
-import Skills from './components/Skills/Skills';
+// import Skills from './components/Skills/Skills';
 import Header from './components/Header/Header';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Picture/>
           <AboutMe/>
           <Projects2/>
-          <Skills/>
+          {/* <Skills/> */}
           <Routes>
             <Route path=':error' element={<Error/>}/>
           </Routes>

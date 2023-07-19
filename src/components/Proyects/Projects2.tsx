@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import crew from '../utils/projects/Crew.png';
 import dogs from '../utils/projects/HenryDogs.png';
-
+import style from '../AboutMe/AboutMe.module.css'
 
 const Projects2 = () => {
     const settings = {
@@ -25,8 +25,8 @@ const Projects2 = () => {
       };
 
   return (
-    <div className="relative mt-[5rem] lg:mt-[8rem] h-[35rem] w-full overflow-x-hidden">
-        <h1 className="text-center mb-[2rem] text-5xl md:text-7xl text-white font-headerFont ">Mis Proyectos</h1>
+    <div className="relative mt-[5rem]  h-[35rem] w-full overflow-x-hidden">
+        <h1 className={style.titulo}>Mis Proyectos</h1>
       <Slider {...settings}>
         <div className='px-10'>
             <div className="hidden md:flex justify-center gap-5">

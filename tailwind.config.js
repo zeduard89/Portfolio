@@ -21,6 +21,8 @@ export default {
       fadeIn2:'fadeIn 22s',
       fadeInHeader:'fadeIn 3s',
       fadeOut:'fadeOut 6s',
+      fadePhoto:'fadePhoto 20s infinite',
+      fadeRadar:'fadeRadar 20s infinite',
       flipImage: 'flipImage 1s ease-in-out',
       ping2: 'ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite',
       
@@ -155,6 +157,34 @@ export default {
           },
           '100%':{
             opacity: '3%'
+          }
+        },
+        fadePhoto: {
+          '0%': {
+            opacity: '100%'
+          },
+          '25%': {
+            opacity: '0%'
+          },
+          '75%': {
+            opacity: '0%'
+          },
+          '100%': {
+            opacity: '100%'
+          }
+        },
+        fadeRadar: {
+          '0%': {
+            opacity: '0%'
+          },
+          '25%': {
+            opacity: '0%'
+          },
+          '75%': {
+            opacity: '100%'
+          },
+          '100%': {
+            opacity: '0%'
           }
         },
         flipImage: {

@@ -24,7 +24,7 @@ ChartJS.register(
 function RadarChart () {
 
     const data = {
-        labels: ['JavaScript', 'CSS', 'React', 'Node', 'SequelizeSQL'],
+        labels: ['JavaScript', 'CSS', 'React', 'Node', 'SQL'],
         datasets: [
           {
             label: 'Tecnologias',

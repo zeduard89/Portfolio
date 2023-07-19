@@ -9,7 +9,7 @@ const AboutMe = () => {
   const [useToogle, setToogle] = useState (true)
 
   return (
-    <div className=" h-fit lg:h-screen  w-full">
+    <div className=" h-fit lg:h-fit  w-full">
       <div className="   w-fit grid grid-cols-1 mx-10 md:mx-20 ">
         {useToogle?
         <div className=" md:col-span-3 mb-1 ">
