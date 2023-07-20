@@ -71,10 +71,10 @@ const Projects2 = () => {
         </div>
       </Slider>
       <div className="flex justify-center mt-4 relative">
-        <button className="button text-white absolute left-3 top-[-8rem]" onClick={() => sliderRef.current?.slickPrev()}>
+        <button className="button text-white absolute left-3 top-[-15rem]" onClick={() => sliderRef.current?.slickPrev()}>
           <img className='h-20 scale-x-[-1] ' src={fDerecha} alt="flecha" />
         </button>
-        <button className="button text-white absolute right-3 top-[-8rem]" onClick={() => sliderRef.current?.slickNext()}>
+        <button className="button text-white absolute right-3 top-[-15rem]" onClick={() => sliderRef.current?.slickNext()}>
           <img className='h-20' src={fDerecha} alt="flecha" />
         </button>
       </div>

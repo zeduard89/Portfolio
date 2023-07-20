@@ -11,14 +11,14 @@ import style from '../AboutMe/AboutMe.module.css'
             <p className="text-white text-lg  font-headerFont">Front End apasionado <br />centrado en la experiencia <br />del usuario</p>
         </div>
         <div className='drop-shadow-xl place-self-center my-5 md:ml-[6rem] md:col-span-1'>
-            <div className="absolute sm:ml-0 rounded-[999rem] h-[16rem] w-[10rem] sm:w-[14rem]  overflow-hidden lg:animate-fadePhoto ">
+            <div className="absolute ml-[5rem] sm:ml-0 rounded-[999rem] h-[16rem] w-[10rem] sm:w-[14rem]  overflow-hidden lg:animate-fadePhoto ">
               <video src={vidPerfil} autoPlay loop muted className='w-full h-full object-cover' />
             </div>
             <div className='relative top-[-2rem] right-[2rem] invisible lg:visible lg:animate-fadeRadar'>
                 <RadarChart/>
             </div>         
         </div>
-        <div className='lg:hidden col-span-2 sm:col-span-1'>
+        <div className='lg:hidden pl-9 pt-6 sm:pt-0 col-span-2 sm:col-span-1'>
             <RadarChart/>
         </div>
         <div className="hidden lg:block col-span-2 text-center pt-10">

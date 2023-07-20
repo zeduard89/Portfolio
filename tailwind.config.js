@@ -72,11 +72,11 @@ export default {
             'animation-timing-function': 'cubic-bezier(0, 0, 1, 1)',
           },
           '50%': {
-            transform: 'translatex(650%)',
+            transform: 'translatex(580%)',
             'animation-timing-function': 'cubic-bezier(0, 0, 1, 1)',
           },
           '51%':{
-            transform: ' translatex(650%) scaleX(-1)',
+            transform: ' translatex(580%) scaleX(-1)',
             'animation-timing-function': 'cubic-bezier(0, 0, 1, 1)',
           },
           '100%': {
@@ -84,6 +84,7 @@ export default {
             'animation-timing-function': 'cubic-bezier(0, 0, 1, 1)',
           },  
         },
+        
         
         slideDown:{
           '0%':{
