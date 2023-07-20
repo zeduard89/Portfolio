@@ -16,7 +16,7 @@ import scrum from '../utils/Skils/scrum.png'
 
 const Skills = () => {
   return (
-    <div className="h-fit w-full flex flex-col items-cente">
+    <div id="skills" className="h-fit w-full flex flex-col items-cente">
       
       <div className=" h-auto mb-[3rem] flex flex-cols-3 justify-center items-center">
         <div className="h-2 w-1/3 col-span-1  bg-slate-700 rounded "></div>

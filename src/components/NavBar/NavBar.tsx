@@ -1,11 +1,14 @@
-import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import linkedIn from '../utils/AboutMe/linkedIn.png'
 import gmail from '../utils/AboutMe/gmail.png'
 import github from '../utils/AboutMe/github2.png'
 import instagram from '../utils/AboutMe/instagram.png'
 
-const NavBar = () => {
+interface NavBarProps {
+  onScroll: (sectionId: string) => void;
+}
+
+const NavBar: React.FC<NavBarProps> = ({ onScroll }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -52,26 +55,35 @@ const NavBar = () => {
         <ul className=" bg-slate-800 divide-gray-100 w-1/3 sm:bg-transparent  flex flex-col sm:flex-row text-center justify-center rounded-md border-2 sm:border-none border-slate-300">
           <li className='hover:bg-gray-500 sm:hover:bg-transparent w-full rounded-md '>
             <button
-              className='btnNav text-white font-bold sm:w-48 w-24 h-8 sm:hover:text-blue-700 '
-              onClick={closeMenu}
+              className='btnNav text-white font-headerFont text-[1.2rem] sm:text-3xl sm:w-48 w-24 h-8 sm:hover:text-blue-700 '
+              onClick={() => {
+                closeMenu(); // Primero, llama a la función closeMenu
+                onScroll('aboutMe'); // Luego, llama a la función onScroll con el parámetro 'about-me'
+              }}
             >
-              <NavLink className="sm:text-2xl font-headerFont" to='/'>Sobre Mi</NavLink>
+            About Me  
             </button>
           </li>
           <li className='hover:bg-gray-500 sm:hover:bg-transparent w-full rounded-md '>
             <button
-              className='btnNav text-white font-bold sm:w-48 w-24 h-8 sm:hover:text-blue-700'
-              onClick={closeMenu}
+              className='btnNav text-white font-headerFont text-[1.2rem] sm:text-3xl sm:w-48 w-24 h-8 sm:hover:text-blue-700'
+              onClick={() => {
+                closeMenu(); // Primero, llama a la función closeMenu
+                onScroll('projects'); // Luego, llama a la función onScroll con el parámetro 'about-me'
+              }}
             >
-              <NavLink className="sm:text-2xl font-headerFont " to='/Projects'>Proyectos</NavLink>
+            Projects
             </button>
           </li>
           <li className='hover:bg-gray-500 sm:hover:bg-transparent w-full rounded-md '>
             <button
-              className='btnNav text-white font-bold sm:w-48 w-24 h-8 sm:hover:text-blue-700'
-              onClick={closeMenu}
+              className='btnNav text-white font-headerFont text-[1.2rem] sm:text-3xl sm:w-48 w-24 h-8 sm:hover:text-blue-700'
+              onClick={() => {
+                closeMenu(); // Primero, llama a la función closeMenu
+                onScroll('skills'); // Luego, llama a la función onScroll con el parámetro 'about-me'
+              }}
             >
-              <NavLink className="sm:text-2xl font-headerFont" to='/TechSkills'>TechSkills</NavLink>
+            Skills
             </button>
           </li>
         </ul>

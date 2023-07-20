@@ -9,7 +9,7 @@ const AboutMe = () => {
   const [useToogle, setToogle] = useState (true)
 
   return (
-    <div className=" h-fit lg:h-fit  w-full">
+    <div id="aboutMe"  className=" h-fit lg:h-fit  w-full">
       <div className="   w-fit grid grid-cols-1 mx-10 md:mx-20 ">
         {useToogle?
         <div className=" md:col-span-3 mb-1 ">
@@ -37,11 +37,11 @@ const AboutMe = () => {
               />
               
             </h1>
-            <p className='animate-fadeIn '>
+            <p  className='animate-fadeIn '>
               Soy Guillermo E. Paez, un programador Junior "FullStack" graduado del BootCamp de Henry y estudiante de la carrera de Ingeniería en Sistemas de la Universidad de la Marina Mercante.
             </p>
             
-            <h1 className="text-[2rem] mb-[2rem] mt-3 sm:mt-3 h-10">
+            <h1  className="text-[2rem] mb-[2rem] mt-3 sm:mt-3 h-10">
               <TypeWriterEffect
               textStyle={{ 
                 fontFamily: 'google',

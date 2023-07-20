@@ -34,7 +34,7 @@ const Projects2 = () => {
       };
 
   return (
-    <div className="mt-[5rem]  h-[30rem] w-full overflow-x-hidden">
+    <div id="projects" className="mt-[5rem]  h-[30rem] w-full overflow-x-hidden">
         <h1 className={style.titulo}>Mis Proyectos</h1>
       <Slider {...settings} ref={sliderRef}>
         <div className='relative object-cover '>
@@ -53,7 +53,7 @@ const Projects2 = () => {
             <p className='text-white'>Tecnologias: Node | Express | SequelizeSQL | Azure | React | React Query | TypeScript.</p>
           </div>
         </div>
-        <div className='relative object-cover'>
+        <div id="projects" className='relative object-cover'>
             <div className="hidden md:flex justify-center gap-3 px-5  ">
                 <img src={dogs} alt="Dogs" className='h-[18rem] w-1/3  rounded-md'/>
                 <img src={dogsFilter} alt="Dogs" className='h-[18rem] w-1/3  rounded-md'/>
@@ -62,7 +62,7 @@ const Projects2 = () => {
             <div className=" md:hidden flex justify-center  gap-1 ">
                 <img src={dogs} alt="Dogs" className='h-[18rem]  w-full sm:px-[.5rem] md:w-full  rounded-sm'/>
             </div>
-          <div className="absolute bottom-[1rem] left-0 right-0 bg-black bg-opacity-80 h-[6rem] carousel-caption  flex justify-center  items-center text-center flex-col text-white">
+          <div  className="absolute bottom-[1rem] left-0 right-0 bg-black bg-opacity-80 h-[6rem] carousel-caption  flex justify-center  items-center text-center flex-col text-white">
             <a className='w-[10rem]' href="https://deploy-henry-dogs.vercel.app/">
               <h5 className='  text-2xl  hover:text-blue-600 active:text-blue-700 focus:outline-none focus:ring focus:ring-violet-300'>Dogs Cards</h5>
             </a>
