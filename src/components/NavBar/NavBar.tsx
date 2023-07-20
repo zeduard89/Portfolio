@@ -49,7 +49,7 @@ const NavBar = () => {
         } ml-3 sm:ml-0 w-full sm:flex sm:items-center justify-center sm:w-full`}
         id="navbar-hamburger"
       >
-        <ul className=" bg-slate-800 divide-gray-100 w-1/4 sm:bg-transparent  flex flex-col sm:flex-row text-center justify-center rounded-md border-2 sm:border-none border-slate-300">
+        <ul className=" bg-slate-800 divide-gray-100 w-1/3 sm:bg-transparent  flex flex-col sm:flex-row text-center justify-center rounded-md border-2 sm:border-none border-slate-300">
           <li className='hover:bg-gray-500 sm:hover:bg-transparent w-full rounded-md '>
             <button
               className='btnNav text-white font-bold sm:w-48 w-24 h-8 sm:hover:text-blue-700 '
