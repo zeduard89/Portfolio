@@ -16,20 +16,22 @@ import scrum from '../utils/Skils/scrum.png'
 
 const Skills = () => {
   return (
-    <div className="h-fit w-screen flex flex-col items-center mt-[2rem] ">
+    <div className="h-fit w-full flex flex-col items-cente">
       
-      <div className=" h-auto mb-[3rem] flex flex-col items-center">
-        <div className="animate-pulse flex space-x-4">
-          <div>
+      <div className=" h-auto mb-[3rem] flex flex-cols-3 justify-center items-center">
+        <div className="h-2 w-1/3 col-span-1  bg-slate-700 rounded "></div>
+        <div className="animate-pulse w-1/3  flex justify-center">
+          <div className=' col-span-1 border-4 border-slate-700 '>
             <div className="h-2 bg-slate-700 rounded "></div>
             <div className="rounded-full h-3 w-3"></div>
             <div>
-              <h1 className="text-[3rem] animate-bounce">My Skills</h1>
-              <div className="rounded-full bg-slate-700 h-[.9rem] w-[.9rem]  animate-bounce2"></div>
+              <h1 className="text-[3rem] text-center animate-bounce text-white">My Skills</h1>
+              <div className="hidden md:block rounded-full bg-slate-700 h-[.9rem] w-[.9rem]  animate-bounce2"></div>
               <div className="h-2 bg-slate-700 rounded"></div>
             </div>
           </div>
         </div>
+        <div className="h-2 w-1/3 col-span-1  bg-slate-700 rounded "></div>
       </div>
 
       <div className="grid grid-cols-1 mb-2 md:grid-cols-3  gap-4 w-11/12" >
