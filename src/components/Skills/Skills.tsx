@@ -23,16 +23,35 @@ const Skills = () => {
   const pcIzquierda = [node,express,sequelize,postman]
 
   // Define el estado para mantener el índice actual de las imágenes
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex1, setCurrentIndex1] = useState(0);
+  const [currentIndex2, setCurrentIndex2] = useState(0);
+  const [currentIndex3, setCurrentIndex3] = useState(0);
+
+
 
   // Función para cambiar las imágenes cada 3 segundos
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % pcIzquierda.length);
+    const interval1 = setInterval(() => {
+      setCurrentIndex1((prevIndex) => (prevIndex + 1) % pcIzquierda.length);
     }, 3000);
-
-    return () => clearInterval(interval);
+    return () => clearInterval(interval1);
   }, []);
+
+  useEffect(() => {
+  const interval2 = setInterval(() => {
+    setCurrentIndex2((prevIndex) => (prevIndex + 1) % pcIzquierda.length);
+  }, 3500);
+  return () => clearInterval(interval2);
+  }, []);
+
+  useEffect(() => {
+  const interval3 = setInterval(() => {
+    setCurrentIndex3((prevIndex) => (prevIndex + 1) % pcIzquierda.length);
+  }, 4000);
+  return () => clearInterval(interval3);
+  }, []);
+
+
 
   return (
     <div id="skills" className="h-fit w-full my-[5rem] absolute">
@@ -53,15 +72,17 @@ const Skills = () => {
         <div className="h-2 w-1/3 col-span-1  bg-slate-700 rounded "></div>
       </div>
 
-        <div className= 'grid grid-cols-3 mx-2 mb-[5rem] ml-5  '>
+      
+
+        <div className= 'grid grid-cols-3 mx-2 mb-[5rem] ml-5'>
           <div className=' '>
-            <img src={pcIzquierda[currentIndex]} alt="pc" className=''/>
+            <img src={pcIzquierda[currentIndex1]} alt="pc" className=''/>
           </div>
           <div>
-            <img src={pcCentro[currentIndex]} alt="pc" className='-translate-y-4 sm:-translate-y-10'/>
+            <img src={pcCentro[currentIndex2]} alt="pc" className='-translate-y-4 sm:-translate-y-10'/>
           </div>
           <div>
-            <img src={pcDerecha[currentIndex]} alt="pc" className=''/>
+            <img src={pcDerecha[currentIndex3]} alt="pc" className=''/>
           </div>
         </div>
         
