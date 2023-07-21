@@ -110,7 +110,7 @@ const NavBar: React.FC<NavBarProps> = ({ onScroll }) => {
       <div className={`sm:hidden md:block h-[3.5rem] w-[10.8rem] sm:w-[15rem] rounded-b-[2rem] ${isMenuOpen ? 'hidden' : 'block'}`}>
 
         <div className="grid grid-cols-5 gap-1 md:grid-cols-4  ">
-            <a href="https://www.linkedin.com/in/guillermo-paez-9a40b7118/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/guillermo-eduardo-paez-172366284/" target="_blank" rel="noopener noreferrer">
               <img className="h-[2.2rem] w-[2.2rem] mt-2  bg-white rounded-lg" src={linkedIn} alt="linkedIn" />
             </a>
             <a href="mailto:zeduard89@gmail.com?subject=Te%20Contacto%20Por%20Medio%20de%20tu%20Porfolio&body=Hola%20Guillermo,%0D%0A%0D%0AEspero%20que%20te%20encuentres%20bien.%20Quisiera%20ponerme%20en%20contacto%20contigo%20para%20discutir%20oportunidades%20de%20colaboración.%0D%0A%0D%0A¡Saludos%20cordiales!">
