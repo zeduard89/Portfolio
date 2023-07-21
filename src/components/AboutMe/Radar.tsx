@@ -24,11 +24,11 @@ ChartJS.register(
 function RadarChart () {
 
     const data = {
-        labels: ['JavaScript', 'CSS', 'React', 'Node', 'SQL'],
+        labels: ['JavaScript', 'CSS', 'React', 'Node', 'SQL','Java'],
         datasets: [
           {
             label: 'Tecnologias',
-            data: [2.95 ,2.8 ,2.9 ,3 ,2.9],
+            data: [1.9,1.7, 1.7, 1.8, 1.8,1.4],
             color:'#fff',
             font:{size:14},
             // backgroundColor: 'rgba(75, 192, 192, 0.2)',
