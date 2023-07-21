@@ -20,7 +20,7 @@ const AboutMe = () => {
               <TypeWriterEffect
                 textStyle={{
                   fontFamily: 'google',
-                  color: '#3F3D56',
+                  color: '#000000',
                   fontWeight: 1500,
                   fontSize: '2rem',
                 }}
@@ -45,12 +45,12 @@ const AboutMe = () => {
               <TypeWriterEffect
               textStyle={{ 
                 fontFamily: 'google',
-                  color: '#3F3D56',
+                  color: '#000000',
                   fontWeight: 1500,
                   fontSize: '2rem',
               }}
               startDelay={15500}
-              cursorColor="black"
+              cursorColor="#3F3D56"
               text="¿Qué me caracteriza?"
               typeSpeed={100}
               />
