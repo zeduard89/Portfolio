@@ -1,11 +1,41 @@
 import HTML from '../utils/Skils/HTML2.gif'
+import tailwind from '../utils/Skils/Tailwind.gif'
+import javascript from '../utils/Skils/JavaScript.gif'
+import react from '../utils/Skils/React.gif'
+import redux from '../utils/Skils/redux.gif'
+import azure from '../utils/Skils/azure.gif'
+import docker from '../utils/Skils/docker.gif'
+import scrum from '../utils/Skils/scrum.gif'
+import agiles from '../utils/Skils/agiles.gif'
+import git from '../utils/Skils/git.gif'
+import github from '../utils/Skils/github.gif'
+import node from '../utils/Skils/node.gif'
+import express from '../utils/Skils/express.gif'
+import sequelize from '../utils/Skils/Sequelize.gif'
+import postman from '../utils/Skils/postman.gif'
+import { useState, useEffect } from 'react'
 
-import PcDerecha from '../utils/Skils/PcDerecha.gif'
-import PcIzquiera from '../utils/Skils/PcIzquierda.gif'
 
 const Skills = () => {
+
+  const pcCentro = [HTML,tailwind,javascript,react,redux]
+  const pcDerecha =[azure,docker,scrum,agiles,git,github]
+  const pcIzquierda = [node,express,sequelize,postman]
+
+  // Define el estado para mantener el índice actual de las imágenes
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Función para cambiar las imágenes cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % pcIzquierda.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div id="skills" className="h-full w-full my-[5rem]">
+    <div id="skills" className="h-fit w-full my-[5rem] absolute">
       
       <div className="row-span-1  mb-[5rem] flex flex-cols-3 justify-center items-center">
         <div className="h-2 w-1/3 col-span-1  bg-slate-700 rounded "></div>
@@ -23,52 +53,20 @@ const Skills = () => {
         <div className="h-2 w-1/3 col-span-1  bg-slate-700 rounded "></div>
       </div>
 
-      
-      
-        <div className= 'grid grid-cols-3 '>
-          <img src={PcIzquiera} alt="pc" className=''/>
-          <img src={HTML} alt="pc" className='-translate-y-4 sm:-translate-y-10'/>
-          <img src={PcDerecha} alt="pc" className=''/>
-          {/* <div className="flex flex-col items-center">
-            <h2 className=' bg-green-600 text-[1.5rem] text-center text-white font-bold py-2 w-2/3  rounded-tl-3xl rounded-tr-3xl '>Front-end</h2>
-            <div className="bg-white pt-4 w-2/3 rounded shadow  rounded-b-3xl grid grid-cols-1">
-              <ul className="mt-2 flex flex-col items-center ">
-                <img className="h-[5rem] w-[5rem]" src={html} alt="html" />
-                <img className="h-[5rem] w-[5rem]" src={css} alt="css" />
-                <img className="h-[5rem] w-[5rem]" src={javaScript} alt="javaScript" />
-                <img className="h-[5rem] w-[5rem]" src={react} alt="react" />
-                <img className="h-[5rem] w-[5rem]" src={redux} alt="redux" />
-              </ul>
-            </div>
+        <div className= 'grid grid-cols-3 mx-2 mb-[5rem] ml-5  '>
+          <div className=' '>
+            <img src={pcIzquierda[currentIndex]} alt="pc" className=''/>
           </div>
-
-          <div className="flex flex-col items-center">
-          <h2 className='btnNav bg-green-600 text-[1.5rem] text-center text-white font-bold py-2 w-2/3  rounded-tl-3xl rounded-tr-3xl '>Back-end</h2>
-          <div className="bg-white pt-4 w-2/3 rounded shadow  rounded-b-3xl grid grid-cols-1">
-            <ul className="mt-2 flex flex-col items-center">
-              <img className="h-[5rem] w-[5rem]" src={node} alt="node" />
-              <img className="h-[5rem] w-[5rem]" src={express} alt="express" />
-              <img className="h-[5rem] w-[5rem]" src={postgres} alt="postgres" />
-              <img className="h-[5rem] w-[5rem]" src={sequelize} alt="sequelize" />
-              <img className="h-[5rem] w-[5rem]" src={azure} alt="azure" />
-              <img className="h-[5rem] w-[5rem]" src={postman} alt="postman" />
-            </ul>
+          <div>
+            <img src={pcCentro[currentIndex]} alt="pc" className='-translate-y-4 sm:-translate-y-10'/>
+          </div>
+          <div>
+            <img src={pcDerecha[currentIndex]} alt="pc" className=''/>
           </div>
         </div>
-
-        <div className="flex flex-col items-center">
-          <h2 className='btnNav bg-green-600 text-[1.5rem] text-center  text-white font-bold py-2 w-2/3  rounded-tl-3xl rounded-tr-3xl '>Other</h2>
-          <div className="bg-white pt-4 w-2/3 rounded shadow  rounded-b-3xl  grid grid-cols-1">
-            <ul className="mt-2 flex flex-col items-center">
-              <img className="h-[5rem] w-[5rem]" src={git} alt="css" />
-              <img className="h-[5rem] w-[5rem]" src={github} alt="html" />
-              <img className="h-[5rem] w-[5rem]" src={solvingProblem} alt="javaScript" />
-              <img className="h-[5rem] w-[5rem]" src={scrum} alt="react" />
-            </ul>
-          </div>
-        </div> */}
-
-        </div>
+        
+      <p className ='relative flex justify-end m-3 '>Creacion de zEduard89</p>
+      
     </div>
     
   );
