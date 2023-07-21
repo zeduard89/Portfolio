@@ -1,6 +1,5 @@
 import HTML from '../utils/Skils/HTML2.gif'
 
-import PcCentro from '../utils/Skils/PcCentro.gif'
 import PcDerecha from '../utils/Skils/PcDerecha.gif'
 import PcIzquiera from '../utils/Skils/PcIzquierda.gif'
 
