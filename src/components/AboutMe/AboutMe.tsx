@@ -66,12 +66,12 @@ const AboutMe = () => {
           <h1 className={styles.titulo}>Mi camino hasta aquí</h1>
           <div className="relative w-fit bg-white opacity-100 p-5 rounded-[1rem] border-2 border-green-500">
           <button className="absolute top-3 right-3 inline-block rounded-[99rem] border-2 border-green-500 px-3 pb-[6px] pt-2 text-xs  hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600" onClick={()=>{setToogle(!useToogle)}}>X</button>
-            <h1 className="text-[2rem] mb-[2rem] h-10">¿Quién soy?</h1>
+            <h1 className="text-[2rem] mb-[2rem] h-10 font-google ">¿Quién soy?</h1>
             <p>
               Soy Guillermo E. Paez, un programador Junior "FullStack" graduado del BootCamp de Henry y estudiante de la carrera de Ingeniería en Sistemas de la Universidad de la Marina Mercante.
             </p>
             
-            <h1 className="text-[2rem] mb-[2rem] mt-3 sm:mt-3 h-10">¿Qué me caracteriza?</h1>
+            <h1 className="text-[2rem] mb-[2rem] mt-3 sm:mt-3 h-10 font-google">¿Qué me caracteriza?</h1>
             
             <p className='mt-14 sm:mt-0 pb-10'>Como desarrollador Full Stack, he adquirido habilidades que me han permitido trabajar de manera efectiva en equipo y mejorar mi eficiencia en la lectura de código. <br /> Poseo conocimientos en metodologías ágiles, control de versiones con Git, estructuras de datos, algoritmos y frameworks CSS. <br /> En cuanto al Front-end, tengo experiencia en el desarrollo de interfaces de usuario utilizando tecnologías como React.js, Redux y TypeScript. Estas herramientas me permiten crear aplicaciones web interactivas y versátiles. <br /> Por otro lado, en el Back-end, he trabajado con tecnologías como Node.js, Express, PostgresSQL y Azure para construir la lógica y funcionalidad del lado del servidor en aplicaciones web. <br /> Además de mis habilidades técnicas, también cuento con habilidades blandas en Scrum, liderazgo y gestión de crisis, lo que me permite colaborar eficientemente en equipos y enfrentar desafíos de manera. </p>
             <img className="animate-bounceMen  w-10 absolute bottom-[-16px] left-2" src={giftMen} alt="menWalking" draggable='false'/>

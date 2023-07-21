@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'headerFont':['headerFont']
+        'headerFont':['headerFont'],
+        'google':['google']
       },
       animation: {
       vibrate: 'vibrate 5.8s infinite',
