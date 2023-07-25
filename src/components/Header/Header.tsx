@@ -112,7 +112,7 @@ const Header = () => {
                         startDelay={2800}
                         cursorColor="black"
                         hideCursorAfterText={true}
-                        text="*  Nuestas manos  *"
+                        text="*  Nuestras manos  *"
                         typeSpeed={100}
                         />
         </div>
