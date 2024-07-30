@@ -4,9 +4,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import crew from '../utils/projects/Crew.png';
 import crewDetail from '../utils/projects/crewDetail.png';
 import crewDashBoard from '../utils/projects/crewDashboard.png'
-import dogs from '../utils/projects/HenryDogs.png';
-import dogsForm2 from '../utils/projects/dogsForm2.png'
-import dogsFilter from '../utils/projects/dogsFilter.png'
+import EcoHome from '../utils/imgEcoPlantas/Home.jpg';
+import EcoCatalogo from '../utils/imgEcoPlantas/Catalogo.jpg'
+import EcoForm from '../utils/imgEcoPlantas/Formulario.jpg'
 import style from '../AboutMe/AboutMe.module.css'
 import { useRef } from 'react';
 import fDerecha from '../utils/projects/flecha.png'
@@ -46,7 +46,7 @@ const Projects2 = () => {
             <div className=" md:hidden flex justify-center gap-1  ">
                 <img src={crew} alt="Dogs" className='h-[18rem]  w-full sm:px-[.5rem] md:w-full  rounded-sm'/>
             </div>
-          <div className="absolute bottom-[1rem] left-0 right-0 bg-black bg-opacity-80 h-[6rem] carousel-caption flex justify-center items-center text-center flex-col text-white">
+          <div className="absolute bottom-[1rem] left-0 right-0 bg-black bg-opacity-60 h-[6rem] carousel-caption flex justify-center items-center text-center flex-col text-white">
             <a href="https://crew-xi.vercel.app/">
               <h5 className='  text-2xl  hover:text-blue-600 active:text-blue-700 focus:outline-none focus:ring focus:ring-violet-300'>Crew "CrowdFunding"</h5>
             </a>
@@ -55,18 +55,18 @@ const Projects2 = () => {
         </div>
         <div id="projects" className='relative object-cover'>
             <div className="hidden md:flex justify-center gap-3 px-5  ">
-                <img src={dogs} alt="Dogs" className='h-[18rem] w-1/3  rounded-md'/>
-                <img src={dogsFilter} alt="Dogs" className='h-[18rem] w-1/3  rounded-md'/>
-                <img src={dogsForm2} alt="Dogs" className='h-[18rem] w-1/3  rounded-md'/>
+                <img src={EcoHome} alt="Dogs" className='h-[18rem] w-1/3  rounded-md'/>
+                <img src={EcoCatalogo} alt="Dogs" className='h-[18rem] w-1/3  rounded-md'/>
+                <img src={EcoForm} alt="Dogs" className='h-[18rem] w-1/3  rounded-md'/>
             </div>
             <div className=" md:hidden flex justify-center  gap-1 ">
-                <img src={dogs} alt="Dogs" className='h-[18rem]  w-full sm:px-[.5rem] md:w-full  rounded-sm'/>
+                <img src={EcoHome} alt="Dogs" className='h-[18rem]  w-full sm:px-[.5rem] md:w-full  rounded-sm'/>
             </div>
-          <div  className="absolute bottom-[1rem] left-0 right-0 bg-black bg-opacity-80 h-[6rem] carousel-caption  flex justify-center  items-center text-center flex-col text-white">
-            <a className='w-[10rem]' href="https://deploy-henry-dogs.vercel.app/">
-              <h5 className='  text-2xl  hover:text-blue-600 active:text-blue-700 focus:outline-none focus:ring focus:ring-violet-300'>Dogs Cards</h5>
+          <div  className="absolute bottom-[1rem] left-0 right-0 bg-black bg-opacity-60 h-[6rem] carousel-caption  flex justify-center  items-center text-center flex-col text-white">
+            <a className='w-[10rem]' href="https://www.ecoplantas.com.ar/">
+              <h5 className='  text-2xl  hover:text-blue-600 active:text-blue-700 focus:outline-none focus:ring focus:ring-violet-300'>Eco Plantas</h5>
             </a>
-            <p className='text-white'>Tecnologias: Node | Express | SequelizeSQL | React | Redux.</p>
+            <p className='text-white'>Tecnologias: Ract | React ToolKit | Redux Persist | Tailwind.</p>
           </div>
         </div>
       </Slider>

@@ -16,6 +16,7 @@ import postman from '../utils/Skils/postman.gif'
 import { useState, useEffect } from 'react'
 
 
+
 const Skills = () => {
 
   const pcCentro = [HTML,tailwind,javascript,react,redux]
